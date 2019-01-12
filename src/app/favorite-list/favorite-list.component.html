@@ -1,0 +1,7 @@
+<ng-container *ngIf="favorites">
+  <app-favorite-item  *ngFor="let item of favorites"
+                      [item]="item"
+                      [favorite]="true"
+                      (favoriteEvent)="removeFavorite($event)">
+  </app-favorite-item>
+</ng-container>

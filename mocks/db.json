@@ -1,0 +1,71 @@
+{
+  "favorites": [
+    {
+      "_rank": 14,
+      "original_name": "ドラゴンボール",
+      "genre_ids": [
+        16,
+        35,
+        10759,
+        10765
+      ],
+      "name": "Dragon Ball",
+      "popularity": 192.718,
+      "origin_country": [
+        "JP"
+      ],
+      "vote_count": 216,
+      "first_air_date": "1986-02-26",
+      "backdrop_path": "/iflq7ZJfso6WC7gk9l1tD3unWK.jpg",
+      "original_language": "ja",
+      "id": 12609,
+      "vote_average": 7.8,
+      "overview": "Long ago in the mountains, a fighting master known as Gohan discovered a strange boy whom he named Goku. Gohan raised him and trained Goku in martial arts until he died. The young and very strong boy was on his own, but easily managed. Then one day, Goku met a teenage girl named Bulma, whose search for the dragon balls brought her to Goku's home. Together, they set off to find all seven dragon balls in an adventure that would change Goku's life forever. See how Goku met his life long friends Bulma, Yamcha, Krillin, Master Roshi and more. And see his adventures as a boy, all leading up to  Dragonball Z and later  Dragonball GT.",
+      "poster_path": "/3wx3EAMtqnbSLhGG8NrqXriCUIQ.jpg"
+    },
+    {
+      "_rank": 1,
+      "original_name": "Rick and Morty",
+      "genre_ids": [
+        16,
+        35,
+        10759,
+        10765
+      ],
+      "name": "Rick and Morty",
+      "popularity": 75.893,
+      "origin_country": [
+        "US"
+      ],
+      "vote_count": 1062,
+      "first_air_date": "2013-12-02",
+      "backdrop_path": "/mzzHr6g1yvZ05Mc7hNj3tUdy2bM.jpg",
+      "original_language": "en",
+      "id": 60625,
+      "vote_average": 8.5,
+      "overview": "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+      "poster_path": "/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg"
+    },
+    {
+      "_rank": 3,
+      "original_name": "DEATH NOTE",
+      "genre_ids": [
+        16,
+        9648
+      ],
+      "name": "Death Note",
+      "popularity": 48.512,
+      "origin_country": [
+        "JP"
+      ],
+      "vote_count": 432,
+      "first_air_date": "2006-10-04",
+      "backdrop_path": "/A2j5g79EcWn1oTNCW9PSo7NZRfv.jpg",
+      "original_language": "ja",
+      "id": 13916,
+      "vote_average": 8.3,
+      "overview": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
+      "poster_path": "/nhIkKuOpOXOE6ud0naCHTjRoOwq.jpg"
+    }
+  ]
+}

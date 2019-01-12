@@ -1,0 +1,13 @@
+<h1>
+  20 best animated shows
+</h1>
+<nav mat-tab-nav-bar [backgroundColor]="background">
+  <a mat-tab-link
+     [routerLink]="['/favorites']"
+     (click)="activeLink = 'favorites'"
+     [active]="activeLink.includes('favorites')"> Favorites </a>
+  <a mat-tab-link
+     [routerLink]="['/']"
+     (click)="activeLink = ''"
+     [active]="!activeLink.includes('favorites')"> Ranking </a>
+</nav>

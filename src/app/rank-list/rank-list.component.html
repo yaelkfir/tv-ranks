@@ -1,0 +1,12 @@
+<div *ngIf="list && list.length" >
+  <swiper style="display: block;    width: 1000px; margin: 0 auto;" [config]="swiper">
+    <div *ngFor="let tvItem of list || []; let i = index" class="swiper-slide" style="display: flex; align-items: center; justify-content: center">
+      <div class="slide-content">
+        <app-ranked-item (favoriteEvent)="addToFavorites($event, i+1)" [item]="tvItem" [rank]="i+1" [favorite]="favorites.includes(tvItem.id)"></app-ranked-item>
+      </div>
+    </div>
+  </swiper>
+  <mat-icon class="next-slide">navigate_next</mat-icon>
+  <mat-icon class="prev-slide">navigate_before</mat-icon>
+  <span class="swiper-pagination"></span>
+</div>

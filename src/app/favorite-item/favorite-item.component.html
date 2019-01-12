@@ -1,0 +1,12 @@
+<div class="poster">
+  <img [attr.src]="'https://image.tmdb.org/t/p/w300'+item.poster_path+''" />
+</div>
+<div class="details" style="display: flex; flex-direction: row; justify-content: space-between">
+  <h3>
+    <span class="title">{{item.name}}</span>
+    <span style="display: block" class="date">({{this.firstAirDate |  date:'yyyy'}})</span>
+  </h3>
+  <button style="background-color: white" mat-icon-button (click)="removeFavorite()">
+    <mat-icon [class.favorite]="favorite" class="favorite-icon">delete</mat-icon>
+  </button>
+</div>
