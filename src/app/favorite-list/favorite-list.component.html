@@ -1,7 +1,16 @@
-<ng-container *ngIf="favorites">
-  <app-favorite-item  *ngFor="let item of favorites"
-                      [item]="item"
-                      [favorite]="true"
-                      (favoriteEvent)="removeFavorite($event)">
-  </app-favorite-item>
+<ng-container *ngIf="favorites; else loadingBlock">
+    <ng-container *ngIf="favorites.length; else empty">
+        <app-favorite-item *ngFor="let item of favorites "
+                           [item]="item"
+                           [favorite]="true"
+                           (favoriteEvent)="removeFavorite($event)">
+        </app-favorite-item>
+    </ng-container>
 </ng-container>
+
+    <ng-template #loadingBlock>
+        <mat-progress-spinner></mat-progress-spinner>
+    </ng-template>
+    <ng-template #empty>
+        <p>No favorites.</p>
+    </ng-template>

@@ -12,7 +12,7 @@ import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
 import { HeaderComponent } from './header/header.component';
 import { RankedItemComponent } from './ranked-item/ranked-item.component';
 
-import {MatButtonModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatIconModule, MatProgressSpinnerModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FavoriteListComponent } from './favorite-list/favorite-list.component';
 import { FavoriteItemComponent } from './favorite-item/favorite-item.component';
@@ -35,7 +35,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     {

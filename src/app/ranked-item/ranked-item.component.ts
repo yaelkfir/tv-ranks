@@ -23,7 +23,7 @@ export class RankedItemComponent implements OnInit {
     this.firstAirDate = new Date(this.item.first_air_date);
   }
 
-  addToFavorites(event) {
+  uponFavoritesEvent(event) {
     event.stopPropagation();
     event.preventDefault();
     this.favoriteEvent.emit(this.item);

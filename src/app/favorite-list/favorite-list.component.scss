@@ -1,9 +1,11 @@
 :host{
   display: flex;
   flex-wrap: wrap;
-  width: 1040px;
+  width: 1000px;
   margin: 0 auto;
 }
 app-favorite-item{
-  width: calc(100% / 4); padding: 0 20px;
+  width: calc(100% / 4);
+  padding: 0 20px;
+  padding-bottom: 20px;
 }

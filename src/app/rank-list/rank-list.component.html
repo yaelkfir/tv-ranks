@@ -1,12 +1,18 @@
-<div *ngIf="list && list.length" >
-  <swiper style="display: block;    width: 1000px; margin: 0 auto;" [config]="swiper">
-    <div *ngFor="let tvItem of list || []; let i = index" class="swiper-slide" style="display: flex; align-items: center; justify-content: center">
-      <div class="slide-content">
-        <app-ranked-item (favoriteEvent)="addToFavorites($event, i+1)" [item]="tvItem" [rank]="i+1" [favorite]="favorites.includes(tvItem.id)"></app-ranked-item>
-      </div>
-    </div>
+<div *ngIf="list; else loadingBlock">
+  <swiper *ngIf="list.length; else empty" style="display: block;    width: 1000px; margin: 0 auto;" [config]="swiper">
+        <app-ranked-item  *ngFor="let tvItem of list || []; let i = index" class="swiper-slide" (favoriteEvent)="uponFavoritesEvent($event, i+1)" [item]="tvItem" [rank]="i+1" [favorite]="favorites.includes(tvItem.id)"></app-ranked-item>
   </swiper>
-  <mat-icon class="next-slide">navigate_next</mat-icon>
-  <mat-icon class="prev-slide">navigate_before</mat-icon>
-  <span class="swiper-pagination"></span>
+  <button mat-icon-button class="next-slide">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+  <button mat-icon-button class="prev-slide">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
 </div>
+
+<ng-template #loadingBlock>
+  <mat-progress-spinner [strokeWidth]="2"></mat-progress-spinner>
+</ng-template>
+<ng-template #empty>
+  <p>No favorites.</p>
+</ng-template>

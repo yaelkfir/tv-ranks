@@ -9,10 +9,10 @@ import {ActivatedRoute} from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   activeLink = '';
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
-
+      this.activeLink = document.location.href;
   }
 
 }

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {IApiResTvItem} from '../rank-list/rank-list.component';
-import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-favorite-list',
@@ -11,26 +10,26 @@ import {environment} from '../../environments/environment';
 export class FavoriteListComponent implements OnInit {
 
   favorites;
-  loading;
   list;
   firstAirDate;
+  api = 'http://localhost:3000/favorites';
 
 
   constructor(private client: HttpClient) {
   }
 
-  getFavorites() {
-    this.client.get('http://localhost:3000/favorites').subscribe((r: IApiResTvItem[]) => {
+    ngOnInit() {
+        this.getFavorites();
+    }
+
+    getFavorites() {
+    this.client.get(this.api).subscribe((r: IApiResTvItem[]) => {
       this.favorites = r;
     });
   }
 
-  ngOnInit() {
-    this.getFavorites();
-  }
-
   removeFavorite(item) {
-    this.client.delete(`http://localhost:3000/favorites/${item.id}`).subscribe((res) => {
+    this.client.delete(`this.api/${item.id}`).subscribe(() => {
       this.getFavorites();
     });
   }
