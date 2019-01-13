@@ -29,7 +29,7 @@ export class FavoriteListComponent implements OnInit {
   }
 
   removeFavorite(item) {
-    this.client.delete(`this.api/${item.id}`).subscribe(() => {
+    this.client.delete(`${this.api}/${item.id}`).subscribe(() => {
       this.getFavorites();
     });
   }
